@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue={"stepdefinitions","hooks"},
         dryRun = false,
-        tags = "@US_022"
+        tags = "@Change_password"
 
 )
 
