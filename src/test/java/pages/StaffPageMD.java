@@ -1,5 +1,6 @@
 package pages;
 
+import com.google.errorprone.annotations.FormatMethod;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -64,7 +65,33 @@ public WebElement firstNameUpdated;
     public WebElement addressUpdated;
     @FindBy(xpath = "//*[@id='app-view-container']//dd[9]")
     public WebElement descriptionUpdated;
-    @FindBy(xpath = "//div[@role='alert']")
+    @FindBy(className = "Toastify__toast-body")
     public WebElement saveAlert;
+
+    @FindBy(xpath = "//*[contains(text(),'Edit')]")
+    public WebElement appointmentEdit;
+    @FindBy(xpath = "//*[@name='startDate']")
+    public WebElement appointmentStartDate;
+    @FindBy(xpath = "//*[@name='endDate']")
+    public WebElement appointmentEndDate;
+    @FindBy(id = "appointment-status")
+    public WebElement appointmentStatus;
+    @FindBy (id = "appointment-anamnesis")
+    public WebElement appointmentAnamnesis;
+    @FindBy (id = "appointment-treatment")
+    public WebElement appointmentTreatment;
+    @FindBy(id="appointment-diagnosis")
+    public WebElement appointmentDiagnosis;
+    @FindBy(id = "appointment-description")
+    public WebElement appointmentDescription;
+    @FindBy (id = "appointment-physician")
+    public WebElement appointmentPhysician;
+    @FindBy(id = "appointment-prescription")
+    public WebElement appointmentPrescription;
+
+
+
+
+    ///
 
 }
