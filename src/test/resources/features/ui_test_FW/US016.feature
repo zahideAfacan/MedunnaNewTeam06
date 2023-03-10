@@ -8,6 +8,7 @@
       Then user admin enters credentials
         | username    | password |
         | AdminTeam06 | Team06+  |
+
       @TC01
       Scenario Outline: TC01_CreateTNew_Patient_byAdmin
         When user click on Administration button
@@ -26,9 +27,10 @@
         Examples:test_data
           | login | firstname | lastname | email          | ssn        | language |
           |Hassta |Hassta      |Guzel    |hassta@gmail.com|888-77-6666 | English  |
+
         @TC02
        Scenario: TC02_Admin can see all patient information
           When user click on Administration button
           When user click on user management button
-         When user goes to last page
-         Then users chose patient last patient and  see the all information
+          When user goes to last page
+          Then users chose patient last patient and  see the all information
