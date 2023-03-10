@@ -98,7 +98,7 @@ public class US021PageKU {
     public WebElement userConfirmDelete;
 
     @FindBy(xpath = "//*[@class='Toastify__toast-container Toastify__toast-container--top-left toastify-container']")
-    public WebElement yazialma;
+    public WebElement alertPath;
 
 
 

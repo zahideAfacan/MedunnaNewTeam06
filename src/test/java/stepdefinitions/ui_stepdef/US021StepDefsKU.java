@@ -48,7 +48,7 @@ public class US021StepDefsKU {
         us021PageKU.createdDate.click();
         waitFor(2);
 
-      //  us021PageKU.nextPage.click();
+
 
     }
     @When("find user and click on View button and verify can view people info")
@@ -104,7 +104,7 @@ public class US021StepDefsKU {
         System.out.println("a = " + a);
 
         if (Objects.equals(a, "false")){
-
+            ReusableMethods.waitForClickablility( us021PageKU.activated,5);
             us021PageKU.activated.click();
             waitFor(2);
             String active= us021PageKU.activated.getAttribute("value");
@@ -123,7 +123,7 @@ public class US021StepDefsKU {
 
     @When("give a role user and verify")
     public void giveARoleUserAndVerify() {
-     // actions.sendKeys(Keys.ARROW_DOWN).perform();
+
         waitFor(1);
         actions.sendKeys(Keys.ARROW_DOWN).perform();
         actions.sendKeys(Keys.ARROW_DOWN).perform();
@@ -303,7 +303,7 @@ public class US021StepDefsKU {
 
       // verify 2.method
 
-      us021PageKU.yazialma.getText().contains("A user is deleted");
+      us021PageKU.alertPath.getText().contains("A user is deleted");
 
     }
 }
