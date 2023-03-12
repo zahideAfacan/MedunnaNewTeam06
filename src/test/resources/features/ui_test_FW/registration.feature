@@ -1,11 +1,11 @@
 
-@US01_UI @Medunna_team6 @Wip
+@US01_02
 Feature: US01_Registration_should_be_available_using SSN_firstname_and_lastname_feature
 
   Background: set_up
     Given  user navigates to Medunna url
-    And user click the registration icon
-    And user click registration button
+    And user click on user icon
+    And choose register option from dropdown
 
 
   @US01_TC01
