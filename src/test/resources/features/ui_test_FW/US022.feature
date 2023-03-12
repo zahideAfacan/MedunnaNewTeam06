@@ -44,6 +44,22 @@ Feature:
     Then staff clicks save button
   And staff verifies popup message "The Appointment is updated"
 And staff verifies the changes
+And close the page
 
-
-      #And close the page
+    @US_022_TC_03
+    Scenario: US_022_TC_03
+      And click search patient
+      And enter patient ssn "816-54-6898"
+      Then click on Show Appointments button
+      And  click on edit appointment button
+      And staff changes status of appointment
+      And staff sends clear key to Anamnesis
+      And staff sends clear key to  Treatment
+      And staff sends clear key to Diagnosis
+      And staff sends a text to Prescription
+      And staff sends a text to description
+      And staff selects a physician
+      Then staff clicks save button
+      And staff verifies popup message "The Appointment is updated"
+      And staff verifies the changes
+      And close the page

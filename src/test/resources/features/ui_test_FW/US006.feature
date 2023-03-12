@@ -18,8 +18,8 @@ Feature: appointment
     Then user patient verifies  alert
 
     Examples:test_data
-      | firstname | lastname | ssn         | email              | phone        |
-      | Hasta     | Iyi      | 123-45-9876 | hastaiyi@gmail.com | 234-456-6789 |
+      | firstname | lastname | ssn         | email         | phone        |
+      | Murat     | Drky     | 457-58-7852 | mrt@kmail.com | 655-432-1234 |
 
 
   Scenario: TC02_all_fields_blank
@@ -62,6 +62,6 @@ Feature: appointment
     Then user admin clicks itemTitles
     And user admin clicks patient
     Then user admin checks appointment of patient and verify the credentials
-      | firstname | lastname | ssn         | email              | phone        |
-      | Hasta     | Iyi      | 123-45-9876 | hastaiyi@gmail.com | 234-456-6789 |
+      | firstname | lastname | ssn         | email         | phone        |
+      | Murat     | Drky     | 457-58-7852 | mrt@kmail.com | 655-432-1234 |
 

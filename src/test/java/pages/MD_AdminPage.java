@@ -42,5 +42,10 @@ public WebElement lastName;
     public WebElement submit;
 @FindBy (xpath ="//*[@id='root']/div/div/div[1]/div/div")
     public WebElement successMessage;
+
+///
+    @FindBy (xpath = "//*[@id=\"entity-menu\"]//*[contains(text(),'Messages')]")
+    public WebElement Messages;
+
 }
 

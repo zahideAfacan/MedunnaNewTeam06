@@ -20,6 +20,7 @@ public class LoginStepDefinitionKU {
 
     @Given("go to medunna home page")
     public void go_to_medunna_home_page() {
+
         Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
 
     }
