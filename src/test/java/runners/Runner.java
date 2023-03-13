@@ -18,7 +18,11 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue={"stepdefinitions", "utilities/hooks"},
         dryRun =false,
+<<<<<<< Updated upstream
         tags = "@US10"
+=======
+        tags = "@US028"
+>>>>>>> Stashed changes
 
 
 )
