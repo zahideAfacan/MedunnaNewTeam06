@@ -20,8 +20,8 @@ public class RegistrationStepDefs {
     public void user_navigates_to_medunna_url() {
         Driver.getDriver().get(ConfigReader.getProperty("medunna_url"));
     }
-    @Then("click on user icon")
-    public void click_on_user_icon() {
+    @Then("user click on user icon")
+    public void user_click_on_user_icon() {
         ReusableMethods.waitFor(1);
         medunnaHomePage.userIcon.click();
     }
