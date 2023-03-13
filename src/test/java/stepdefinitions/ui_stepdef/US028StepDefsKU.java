@@ -25,8 +25,8 @@ public class US028StepDefsKU {
     @When("click on ItemsTitles icon and Messages button")
     public void click_on_items_titles_icon_and_messages_button() {
 
-       waitForVisibility(us028PageKU.itemsTitlesIcon,3).click();
-       waitForVisibility(us028PageKU.messagesButton, 3).click();
+        waitForVisibility(us028PageKU.itemsTitlesIcon,3).click();
+        waitForVisibility(us028PageKU.messagesButton, 3).click();
 
 
     }
@@ -45,21 +45,21 @@ public class US028StepDefsKU {
 
     @When("create a message and verify")
     public void create_a_message_and_verify() {
-    us028PageKU.createmessage.click();
+        us028PageKU.createmessage.click();
 
-    us028PageKU.mname.sendKeys(faker.name().fullName());
-    us028PageKU.memail.sendKeys(faker.internet().emailAddress());
-    us028PageKU.msubject.sendKeys("Very important!");
-    us028PageKU.mmessage.sendKeys("Sonbahar sanattir digerleri mevsim!");
-    clickWithTimeOut(us028PageKU.msaveButton,3);
+        us028PageKU.mname.sendKeys(faker.name().fullName());
+        us028PageKU.memail.sendKeys(faker.internet().emailAddress());
+        us028PageKU.msubject.sendKeys("Very important!");
+        us028PageKU.mmessage.sendKeys("Sonbahar sanattir digerleri mevsim!");
+        clickWithTimeOut(us028PageKU.msaveButton,3);
 
-    waitForVisibility(us028PageKU.malertPath,5);
-    // verify 1.method
-    assertTrue( Driver.getDriver().getPageSource().contains("A new Message is created"));
+        waitForVisibility(us028PageKU.malertPath,5);
+        // verify 1.method
+        assertTrue( Driver.getDriver().getPageSource().contains("A new Message is created"));
 
-    // verify 2.method
-    us028PageKU.malertPath.getText().contains("A new Message is created");
-    waitFor(6);
+        // verify 2.method
+        us028PageKU.malertPath.getText().contains("A new Message is created");
+        waitFor(6);
 
     }
 
@@ -69,19 +69,19 @@ public class US028StepDefsKU {
         clickWithTimeOut(us028PageKU.mID,3);
         waitFor(2);
 
-       clickWithTimeOut(us028PageKU.medit,3);
-       waitFor(1);
-       us028PageKU.mmessage.clear();
-       waitFor(1);
-       us028PageKU.mmessage.sendKeys("Yaniliyorsun her mevsim sanat sen goremiyorsun!");
+        clickWithTimeOut(us028PageKU.medit,3);
+        waitFor(1);
+        us028PageKU.mmessage.clear();
+        waitFor(1);
+        us028PageKU.mmessage.sendKeys("Yaniliyorsun her mevsim sanat sen goremiyorsun!");
 
-       waitFor(2);
+        waitFor(2);
         clickWithTimeOut(us028PageKU.msaveButton,3);
 
-       waitForVisibility(us028PageKU.malertPath,2);
-       waitFor(2);
+        waitForVisibility(us028PageKU.malertPath,2);
+        waitFor(2);
 
-       // verify 1.method
+        // verify 1.method
         assertTrue( Driver.getDriver().getPageSource().contains("A Message is updated"));
 
         // verify 2.method
