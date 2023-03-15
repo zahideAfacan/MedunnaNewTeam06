@@ -36,6 +36,7 @@ public class AdminUserManagementPage {
     @FindBy(id = "langKey")
     public WebElement Language;
 
+
     @FindBy(xpath = "//option[@value='ROLE_PATIENT']")
     public WebElement Profiles;
 
@@ -48,12 +49,18 @@ public class AdminUserManagementPage {
     @FindBy(xpath = "(//a[@class='page-link'])[9]")
     public WebElement LastPageButton;
 
-    @FindBy(xpath = "//tr/td/a")
-    public WebElement ListOfPatientID;
+    @FindBy(id = "entity-menu")
+    public WebElement ItemsTitles;
 
-    @FindBy(xpath = "//tr/td/a")
-    public WebElement ListOfPatientInfo;
+    @FindBy(id = "jh-create-entity")
+    public WebElement CreateANewPatient;
 
+    @FindBy(xpath = "(//a[@href='/patient'])[1]")
+    public WebElement PatientDropdown;
+
+    @FindBy(xpath = "//*[@class='Toastify__toast Toastify__toast--error toastify-toast']")
+    public WebElement errorMessage;
+//Toastify__toast Toastify__toast--error toastify-toast
 
 
 

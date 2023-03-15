@@ -2,17 +2,21 @@ package stepdefinitions.ui_stepdef;
 
 import io.cucumber.java.en.*;
 import pages.AdminUserManagementPage;
-import utilities.JSUtils;
 
+
+import utilities.JsUtils;
 import utilities.ReusableMethods;
 
 public class US016_Stepdefinitions {
+
+    //Background
     AdminUserManagementPage adminUserManagementPage=new AdminUserManagementPage();
     @When("user click on Administration button")
     public void user_click_on_administration_button() {
        adminUserManagementPage.Administration.click();
         ReusableMethods.waitFor(1);
     }
+    //TC01
     @When("user click on user management button")
     public void user_click_on_user_management_button() {
        adminUserManagementPage.UserManagement.click();
@@ -59,12 +63,13 @@ public class US016_Stepdefinitions {
     }
     @Then("user click on patient role")
     public void user_click_on_patient_role() {
-        JSUtils.clickElementByJS(adminUserManagementPage.Profiles);
+        JsUtils.clickElementByJS(adminUserManagementPage.Profiles);
         ReusableMethods.waitFor(1);
     }
     @Then("user click on save button")
     public void user_click_on_save_button() {
-        adminUserManagementPage.Save.click();
+        JsUtils.clickElementByJS(adminUserManagementPage.Save);
+        ReusableMethods.waitFor(1);
     }
     @Then("verify patient on the users list")
     public void verify_patient_on_the_users_list() {

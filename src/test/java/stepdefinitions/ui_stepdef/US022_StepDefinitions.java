@@ -198,6 +198,7 @@ ReusableMethods.selectRandomTextFromDropdown(select2);
       Assert.assertNotEquals(patientInfo.get("First Name"),staffPageMD.firstNameUpdated.getText());
       Assert.assertNotEquals(patientInfo.get("Last Name"),staffPageMD.lastNameUpdated.getText());
 
+
     }
 
     ///////STAFF APPOINTMENT CHECK
@@ -209,7 +210,7 @@ ReusableMethods.selectRandomTextFromDropdown(select2);
 
     @Then("click on edit appointment button")
     public void click_on_edit_appointment_button() {
- staffPageMD.appointmentEdit.click();
+    staffPageMD.appointmentEdit.click();
 
     }
 
