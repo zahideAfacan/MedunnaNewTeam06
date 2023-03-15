@@ -42,7 +42,7 @@ public class Hooks {
         System.out.println("RUN FOR ONLY SMOKE TEST SCENARIOS");
     }
 
-    @Before("@Api031")
+    @Before(" @US030_API")
     public void beforeApi(){
         medunnaSetUp();
     }
