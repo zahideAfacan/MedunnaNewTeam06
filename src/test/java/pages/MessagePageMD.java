@@ -23,6 +23,10 @@ public class MessagePageMD {
     public WebElement contact;
 @FindBy (xpath = "//div[@role='alert']")
 public WebElement successMessage;
-
-
+@FindBy(xpath = "//*[@id=\"register-form\"]/div[1]/div[1]/div/div")
+    public WebElement invalidNameMessage;
+@FindBy (xpath = "//*[@id=\"register-form\"]/div[1]/div[2]/div/div")
+    public WebElement invalidEmailMessage;
+    @FindBy (xpath = "//*[@id=\"register-form\"]/div[2]/div/div/div")
+public WebElement invalidSubjectMessage;
 }

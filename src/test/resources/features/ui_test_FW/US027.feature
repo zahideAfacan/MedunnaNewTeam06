@@ -25,11 +25,11 @@ Feature:
 
    Then user admin verifies created message
 
-  #@US_027_TC_03
- # Scenario: US_027_TC_002 Name, Email, Subject cannot be left blank
-    #Given go to medunna home page
-   # When user clicks contact link
-    #And user sends a message
-   # Then user patient click send  button
-    #Then verify Name, Email, and Subject fields are required to send a message successfully.
-   # Then close the application
+  @US_027_TC_03
+ Scenario: US_027_TC_003 Name, Email, Subject cannot be left blank
+ Given go to medunna home page
+When user clicks contact link
+  And user sends a message
+   Then user patient click send  button
+  Then verify Name, Email, and Subject fields are required to send a message successfully.
+#Then close the application

@@ -164,6 +164,17 @@ Thread.sleep(3);
         System.out.println(messageInfo.get("Subject"));
             }
 
+    @Then("verify Name, Email, and Subject fields are required to send a message successfully.")
+    public void verify_name_email_and_subject_fields_are_required_to_send_a_message_successfully() {
+String invalidName=messagePageMD.invalidNameMessage.getText();
+Assert.assertTrue(invalidName.contains("Name is required."));
+String invalidEmail=messagePageMD.invalidEmailMessage.getText();
+Assert.assertTrue(invalidEmail.contains("Your email is required."));
+String invalidSubject=messagePageMD.invalidSubjectMessage.getText();
+Assert.assertTrue(invalidSubject.contains("This field is required."));
+
+    }
+
         }
 
 
