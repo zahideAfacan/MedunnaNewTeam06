@@ -14,11 +14,13 @@ import org.junit.runner.RunWith;
                 "rerun:target/failedRerun.txt"
         },
 
-
         features = "src/test/resources/features",
-        glue={"stepdefinitions","hooks"},
+        glue={"stepdefinitions", "utilities/hooks"},
         dryRun =false,
+
         tags ="@get_all_message"
+
+
 
 )
 

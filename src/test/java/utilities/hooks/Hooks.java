@@ -1,4 +1,4 @@
-package hooks;
+package utilities.hooks;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -42,7 +42,7 @@ public class Hooks {
         System.out.println("RUN FOR ONLY SMOKE TEST SCENARIOS");
     }
 
-    @Before("@Api08")
+    @Before(" @US030_API")
     public void beforeApi(){
         medunnaSetUp();
     }

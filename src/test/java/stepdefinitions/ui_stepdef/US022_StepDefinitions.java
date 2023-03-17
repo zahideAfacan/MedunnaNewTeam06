@@ -198,6 +198,7 @@ String ssn=faker.regexify("[1-8]{3}-[2-9]{2}-[1-9]{4}");
         Assert.assertNotEquals(patientInfo.get("First Name"),staffPageMD.firstNameUpdated.getText());
         Assert.assertNotEquals(patientInfo.get("Last Name"),staffPageMD.lastNameUpdated.getText());
 
+
     }
 
     ///////STAFF APPOINTMENT CHECK
@@ -209,7 +210,11 @@ String ssn=faker.regexify("[1-8]{3}-[2-9]{2}-[1-9]{4}");
 
     @Then("click on edit appointment button")
     public void click_on_edit_appointment_button() {
+<<<<<<< HEAD
         staffPageMD.appointmentEdit.click();
+=======
+    staffPageMD.appointmentEdit.click();
+>>>>>>> master
 
     }
 

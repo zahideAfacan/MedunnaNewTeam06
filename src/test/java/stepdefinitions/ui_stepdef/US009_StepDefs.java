@@ -11,7 +11,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class US_009StepDefs {
+public class US009_StepDefs {
         LoginPageZA loginPageZA=new LoginPageZA();
         HomePageZA homePageZA=new HomePageZA();
         Faker faker=new Faker();
